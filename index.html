@@ -1,11 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f9a12e2310.js" crossorigin="anonymous"></script>
+    <title>Drifting</title>
+
 </head>
+
 <body>
-    
+    <header>
+        <div class="topbar">
+            <div>
+                <img src="./img/logo.PNG" alt="">
+                <h1>Sport <br><span> Découverte </span> </h1>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Recherche (ex:Saut en parachute, Paris)">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div>
+                <a href="">Besoin d'aide ?</a>
+            </div>
+            <div>
+                <a href=""> Groupe & séminaires</a>
+            </div>
+            <div>
+                <a href="">Rendez-vous</a>
+            </div>
+        </div>
+        <hr>
+        <nav class="bottombar">
+            <nav class="navbar">
+                <a href="">Noël</a>
+                <a href="">Aérien</a>
+                <a href="">Pilotage</a>
+                <a href="">Aquatique</a>
+                <a href="">Montagne</a>
+                <a href="">Urbain</a>
+                <a href="">Week end</a>
+                <a href="">Régions</a>
+                <a href="">Idées cadeaux</a>
+            </nav>
+            <nav class="icons">
+                <i class="fa-regular fa-user" title="voir mon profil"></i>
+                <i class="fa-regular fa-heart"title="voir ma liste des favoris"></i>
+                <i class="fa-solid fa-cart-shopping" title="voir mon panier" ></i>
+            </nav>
+        </nav>
+    </header>
+    <main>
+        <section class="topcontainer">
+            <p><i class="fa-solid fa-house"></i> > Pilotage > Drift </p>
+            <h1>Stage de Pilotage de Glisse Drift</h1>
+            <p>Découvrez la glisse à l'occasion d'un stage de drift ! Avec nos cours de drift,vous apprendrez à controler la glisse et a parfaire votre technique de pilotage et la maitruse du dérapage controlé. Faites glisser la voiture sur le circuit pour une conduite sportive absolue tout en virage. Découvrez nos staes de pilotage drift partout en france</p>
+            <div class="filtresbar">
+                
+                <section>
+                    <select name="régions" id="régions">
+                        <option value="" selected disabled >Choisisez un région</option>
+                    </select><i class="fa-solid fa-chevron-down"></i>
+                </section>
+                <section>
+                    <select name="stage" id="stage">
+                        <option value="" selected disabled >Stage Pilotage Glisse</option>
+                    </select><i class="fa-solid fa-chevron-down"></i>
+                </section>
+                <section>
+                    <select name="circuit" id="circuit">
+                        <option value="" selected disabled >Circuit</option>
+                    </select><i class="fa-solid fa-chevron-down"></i>
+                </section>
+                <section>
+                    <select name="prix" id="prix">
+                        <option value="" selected disabled >Prix</option>
+                    </select><i class="fa-solid fa-chevron-down"></i>
+                </section>
+                <button><i class="fa-solid fa-sliders" > </i> <span>Voir tous les filtres</span></button>
+            </div>
+        </section>
+        <section class="container">
+            <div class="tribar">
+                <div id="offres">31 offres</div>
+                <div class="tri">
+                    <section>Trier par 
+                        <select name="trie" id="trie">
+                            
+                            <option value="" selected disabled >Popularité</option>
+                        </select><i class="fa-solid fa-chevron-down"></i>
+                    </section>
+                    <section>
+                        <button id="carte"><i class="fa-solid fa-map"></i> Carte</button>
+                    </section>
+                </div>
+            </div>
+            <div class="offre_container">
+                <section>
+                    <label>PROMO</label>
+                    <i id="heart" class="fa-solid fa-heart"></i>
+                    <img src="./img/voiture1.png" alt="voiture">
+                    <h2>Stage de Pilotage Drift - Circuit du Castellet</h2>
+                    <p>Var - 83</p>
+                    
+                    <aside>
+                        <div><i class="fa-solid fa-star"></i><b>4,7 </b><span>(155 avis)</span></div>
+                        <div><p>à partir de <br><span class="price"> 194,25 € </span><span class="f_price">259 €</span> </p></div>
+                    </aside>
+                </section>
+                <section>
+                    <label>PROMO</label>
+                    <i id="heart" class="fa-solid fa-heart"></i>
+                    <img src="./img/voiture2.png" alt="voiture">
+                    <h2>Stage de Pilotage Drift - Circuit du Mireval</h2>
+                    <p>Hérault - 34</p>
+                    
+                    <aside>
+                       <div> <i class="fa-solid fa-star"></i><b>4,9</b><span>(138 avis)</span></div>
+                       <div> <p>à partir de <br><span class="price">195 €</span><span class="f_price">295 €</span> </p></div>
+                    </aside>
+                </section>
+                <section>
+                    <label>PROMO</label>
+                    <i id="heart" class="fa-solid fa-heart"></i>
+                    <img src="./img/voiture3.png" alt="voiture">
+                    <h2>Pilotage Drift avec Cascadeur Pro - Circuit de la Ferté-Gaucher</h2>
+                    <p>Seine et marne - 77</p>
+                    
+                    <aside>
+                       <div> <i class="fa-solid fa-star"></i><b>4,7</b> <span>(38avis)</span> </div>
+                       <div> <p>à partir de <br> <span class="price">119 €</span><span class="f_price">139 €</span></p> </div>
+                    </aside>
+                </section>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
