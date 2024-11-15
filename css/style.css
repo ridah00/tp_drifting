@@ -149,12 +149,14 @@ body .container .tribar .tri section select {
      -moz-appearance: none;
           appearance: none;
 }
-body .container .tribar .tri section button, body .container .tribar .tri section select {
+body .container .tribar .tri section button,
+body .container .tribar .tri section select {
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
   background-color: white;
 }
-body .container .tribar .tri section button i, body .container .tribar .tri section select i {
+body .container .tribar .tri section button i,
+body .container .tribar .tri section select i {
   padding-right: 1rem;
   font-size: 1.2rem;
 }
@@ -180,7 +182,9 @@ body .container .offre_container section {
   width: 32%;
   border: 0.1rem rgba(0, 0, 0, 0.13) solid;
 }
-body .container .offre_container section h2, body .container .offre_container section p, body .container .offre_container section aside {
+body .container .offre_container section h2,
+body .container .offre_container section p,
+body .container .offre_container section aside {
   padding-inline: 1rem;
 }
 body .container .offre_container section label {
@@ -232,4 +236,95 @@ body .container .offre_container section aside div .f_price {
 }
 body .container .offre_container section p {
   color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 560px) {
+  body header .topbar {
+    margin: 0;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  body header .topbar div a {
+    font-size: 1.5rem;
+  }
+  body header .topbar .search-container {
+    width: 90%;
+  }
+  body header .topbar .search-container input {
+    width: 100%;
+  }
+  body header .bottombar {
+    flex-direction: column;
+    margin: 0;
+  }
+  body header .bottombar .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  body header .bottombar .navbar a {
+    font-size: 2rem;
+    background-color: grey;
+    width: 90%;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+  body header .bottombar .icons {
+    display: none;
+  }
+  body main .topcontainer {
+    background-image: none;
+  }
+  body main .topcontainer h1 {
+    margin: 0;
+    color: black;
+    width: 100%;
+  }
+  body main .topcontainer p {
+    display: none;
+  }
+  body main .topcontainer div {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  body main .topcontainer div section {
+    width: 90%;
+  }
+  body main .topcontainer div section select {
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+  }
+  body main .topcontainer div button {
+    padding: 0.5rem 0;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.356);
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 0.5rem;
+  }
+  body main .topcontainer div button i {
+    font-size: 1.5rem;
+  }
+  body main .container {
+    margin: 0;
+  }
+  body main .container .tribar {
+    flex-direction: column;
+  }
+  body main .container .tribar .tri section button i {
+    display: none;
+  }
+  body main .container .offre_container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  body main .container .offre_container section {
+    width: 100%;
+    border: 0.1rem rgba(0, 0, 0, 0.632) solid;
+    border-radius: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
