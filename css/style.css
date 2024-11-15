@@ -15,6 +15,9 @@ body header .topbar .search-container {
   position: relative;
 }
 body header .topbar .search-container input {
+  width: 20rem;
+  height: 2.5rem;
+  padding: 0;
   border-radius: 0.5rem;
 }
 body header .topbar .search-container i {
@@ -23,6 +26,9 @@ body header .topbar .search-container i {
   font-size: 1.7rem;
   top: 0.5rem;
   right: 0.5rem;
+}
+body header .topbar .search-container button {
+  height: 2.7rem;
 }
 body header .topbar div a {
   text-decoration: none;
@@ -33,14 +39,6 @@ body header .topbar div a:hover {
   font-weight: bold;
   padding-bottom: 1rem;
   border-bottom: 0.2rem black solid;
-}
-body header .topbar .search-container input {
-  width: 20rem;
-  height: 2.5rem;
-  padding: 0;
-}
-body header .topbar .search-container button {
-  height: 2.7rem;
 }
 body header .bottombar {
   display: flex;
