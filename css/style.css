@@ -239,6 +239,13 @@ body .container .offre_container section p {
 }
 
 @media (max-width: 560px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 100%;
+  }
   body header .topbar {
     margin: 0;
     flex-direction: column;
@@ -273,13 +280,18 @@ body .container .offre_container section p {
   body header .bottombar .icons {
     display: none;
   }
+  body main {
+    width: 100%;
+  }
   body main .topcontainer {
     background-image: none;
   }
   body main .topcontainer h1 {
+    display: inline;
+    width: 100%;
     margin: 0;
     color: black;
-    width: 100%;
+    width: 90%;
   }
   body main .topcontainer p {
     display: none;
@@ -310,10 +322,11 @@ body .container .offre_container section p {
     font-size: 1.5rem;
   }
   body main .container {
-    margin: 0;
+    margin: 0 1rem;
   }
   body main .container .tribar {
     flex-direction: column;
+    margin: 0;
   }
   body main .container .tribar .tri section button i {
     display: none;
@@ -326,5 +339,8 @@ body .container .offre_container section p {
     width: 100%;
     border: 0.1rem rgba(0, 0, 0, 0.632) solid;
     border-radius: 1rem;
+  }
+  body main .container .offre_container section img {
+    transform: scale(0, 5, 5);
   }
 }/*# sourceMappingURL=style.css.map */
